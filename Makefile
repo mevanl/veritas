@@ -1,6 +1,6 @@
 CC = g++
 CFLAGS = -Wall -Wextra -pedantic
-SOURCES = src/main.cpp src/engine/sdl_error_handling.cpp
+SOURCES = ./src/engine/*.cpp ./src/api/*.cpp ./src/main.cpp
 LIBRARIES = -lSDL2
 
 all: veritas

@@ -1,12 +1,9 @@
-#include <SDL2/SDL.h>
-#include "engine/sdl_error_handling.h"
+#include "api/api.h"
 
-int main()
+int main(int argc, char* argv[])
 {
+  Api api(argc, argv);
+  api.test_sdl();
 
-  check_negative_val(SDL_Init(SDL_INIT_VIDEO));
-
-  SDL_Quit();
-
-  return 0;
+ return 0;
 }
