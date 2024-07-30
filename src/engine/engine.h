@@ -11,7 +11,6 @@ public:
   // these will start and stop the engine
   Engine();
   ~Engine();
-  void temp_test_sdl();
 
 private:
   void start_sdl();

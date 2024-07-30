@@ -23,9 +23,3 @@ Api::Api(int argc, char* argv[])
 
 Api::~Api()
 {}
-
-
-void Api::test_sdl()
-{
-  engine.temp_test_sdl();
-}

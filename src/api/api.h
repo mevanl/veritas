@@ -7,7 +7,6 @@ class Api
 public:
   Api(int argc, char* argv[]);
   ~Api();
-  void test_sdl();
 
 private:
   int num_cmdline_args;
