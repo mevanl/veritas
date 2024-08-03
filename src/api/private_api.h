@@ -1,12 +1,12 @@
 #include "../engine/engine.h"
 
 
-class Api
+class PrivateApi
 {
 
 public:
-  Api(int argc, char* argv[]);
-  ~Api();
+  PrivateApi(int argc, char* argv[]);
+  ~PrivateApi();
 
 private:
   int num_cmdline_args;
@@ -16,4 +16,6 @@ private:
 
 private:
   void set_cmdline_args(int argc, char* argv[]);
+  void create_main_window();
+  
 };

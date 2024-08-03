@@ -1,7 +1,7 @@
-#include "api.h"
+#include "private_api.h"
 
 
-void Api::set_cmdline_args(int argc, char* argv[])
+void PrivateApi::set_cmdline_args(int argc, char* argv[])
 {
   if ( argc - 1 == 0 )
   {
@@ -15,11 +15,11 @@ void Api::set_cmdline_args(int argc, char* argv[])
   cmdline_args = argv;
 }
 
-Api::Api(int argc, char* argv[])
+PrivateApi::PrivateApi(int argc, char* argv[])
 {
   set_cmdline_args(argc, argv);
   
 }
 
-Api::~Api()
+PrivateApi::~PrivateApi()
 {}
