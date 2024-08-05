@@ -3,8 +3,3 @@
 3. Be able to actually edit text
 4. Implement basic keymaps from step 3 (all are public API functions)
 5. save files 
-
-
-Refactoring needed:
-- Change private and public API names to be more obvious as to what they do.
-  Public --> User, Private --> Engine 

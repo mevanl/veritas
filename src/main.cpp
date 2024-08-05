@@ -1,8 +1,8 @@
-#include "api/public_api.h"
+#include "api/user_api.h"
 
 int main(int argc, char* argv[])
 {
-  PublicAPI api(argc, argv);
+  UserApi api(argc, argv);
 
  return 0;
 }

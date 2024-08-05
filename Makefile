@@ -1,6 +1,6 @@
 CC = g++
 CFLAGS = -Wall -Wextra -pedantic
-SOURCES = ./src/engine/*.cpp ./src/api/*.cpp ./src/main.cpp
+SOURCES = ./src/engine/*.cpp ./src/api/*.cpp ./src/api/engine_api/*.cpp ./src/main.cpp
 LIBRARIES = -lSDL2
 
 all: veritas
