@@ -1,10 +1,9 @@
 #pragma once
-
 #include "engine_api/engine_api.h"
+
 
 class UserApi
 {
-
 public:
   UserApi(int argc, char* argv[]);
   ~UserApi();

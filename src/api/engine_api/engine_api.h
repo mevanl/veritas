@@ -1,11 +1,9 @@
 #pragma once
-
 #include "../../engine/engine.h"
 
 
 class EngineApi
 {
-
 public:
   EngineApi();
   ~EngineApi();
@@ -14,10 +12,5 @@ public:
 private:
   int num_cmdline_args;
   char** cmdline_args;
-
   Engine engine;
-
-private:
-  void create_main_window();
-  
 };

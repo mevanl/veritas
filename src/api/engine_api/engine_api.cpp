@@ -16,8 +16,8 @@ void EngineApi::receive_cmdline_args(int argc, char* argv[])
 }
 
 EngineApi::EngineApi()
-{ 
-}
+{}
 
 EngineApi::~EngineApi()
 {}
+

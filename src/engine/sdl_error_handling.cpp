@@ -1,6 +1,7 @@
 #include <SDL2/SDL.h>
 #include <iostream>
 
+
 void check_negative_val(int ret_val)
 {
   if (ret_val < 0)
