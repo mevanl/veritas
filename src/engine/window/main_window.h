@@ -1,6 +1,6 @@
 #pragma once
 #include <SDL2/SDL.h>
-#include "sdl_error_handling.h"
+#include "../error/sdl_error_handling.h"
 
 
 class Main_Window
