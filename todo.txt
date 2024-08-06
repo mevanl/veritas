@@ -1,5 +1,24 @@
+0. Setup engine to be able to render to the screen
 1. Create an API function that will call the engine to start the main veritas window 
-2. Create basic splash screen with fundamental keymaps (new file, enter commands, file explorer)
-3. Be able to actually edit text
-4. Implement basic keymaps from step 3 (all are public API functions)
-5. save files 
+2. Set up the text area of the main window (can be the full window at first)
+3. Be able to open and view a file 
+4. Be able to actually edit text
+5. save files
+6. Create basic splash screen with fundamental keymaps (new file, enter commands, file explorer)
+7. Implement basic keymaps from step 3 (all are public API functions)
+...
+99. TREESITTER !!!
+ 
+
+
+
+Ideas/Features To Implement or not
+----------
+Setting Feature: DefaultSettings.JSON read, UserSettings.JSON read, ProjectSettings.JSON read and implemeneted,
+                 Write over previous settings loaded. 
+
+                 Default settings.JSON will be created the first time the application is ran, this is good way to keep track
+                 of if veritas has been opened before
+
+MainWindowArea: Abstract parent class that is never used itself. Child of it could be like TextWindowArea class that has special 
+                methods for just it. It will also have an SDL_Rect to define where it is, bool isShown(), bool loadOnTrigger(), etc.
