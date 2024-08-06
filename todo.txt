@@ -5,7 +5,7 @@
 4. Be able to actually edit text
 5. save files
 6. Create basic splash screen with fundamental keymaps (new file, enter commands, file explorer)
-7. Implement basic keymaps from step 3 (all are public API functions)
+7. Implement basic keymaps from step 6 (all are public API functions)
 ...
 99. TREESITTER !!!
  
