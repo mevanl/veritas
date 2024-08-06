@@ -1,6 +1,6 @@
 CC = g++
 CFLAGS = -Wall -Wextra -pedantic
-SOURCES = $(wildcard ./src/*.cpp ./src/*/*.cpp ./src/*/**/*.cpp)
+SOURCES = $(wildcard ./src/*.cpp ./src/*/*.cpp ./src/*/**/*.cpp ./src/*/**/**/*.cpp)
 OLD_SOURCES_LIST = ./src/engine/*.cpp ./src/api/*.cpp ./src/api/engine_api/*.cpp ./src/main.cpp ./src/
 LIBRARIES = -lSDL2
 

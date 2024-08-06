@@ -1,7 +1,7 @@
 #pragma once
 #include <SDL2/SDL.h>
 #include "error/sdl_error_handling.h"
-#include "window/main_window.h"
+#include "main_window/main_window.h"
 
 
 class Engine
