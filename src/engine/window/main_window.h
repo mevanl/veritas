@@ -3,11 +3,12 @@
 #include "../error/sdl_error_handling.h"
 
 
-class Main_Window
+
+class MainWindow
 {
 public:
-  Main_Window();
-  ~Main_Window();
+  MainWindow();
+  ~MainWindow();
   SDL_Window* window_getter();
 
 private: 

@@ -14,5 +14,5 @@ public:
   void main_loop(); // defined in its own file: main_loop.cpp
 
 private:
-  Main_Window* main_window;
+  MainWindow* main_window;
 };
