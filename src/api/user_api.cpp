@@ -14,4 +14,7 @@ UserApi::UserApi(int argc, char* argv[])
 UserApi::~UserApi()
 {}
 
-
+void UserApi::start_veritas()
+{
+  engine_api.start();
+}

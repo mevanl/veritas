@@ -21,3 +21,7 @@ EngineApi::EngineApi()
 EngineApi::~EngineApi()
 {}
 
+void EngineApi::start()
+{
+  engine.main_loop();
+}

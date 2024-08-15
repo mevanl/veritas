@@ -11,3 +11,6 @@ veritas: src/main.cpp
 
 clean:
 	rm veritas
+
+debug: src/main.cpp
+	$(CC) $(CFLAGS) -o veritas $(SOURCES) $(LIBRARIES) -g

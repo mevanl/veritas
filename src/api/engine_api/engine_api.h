@@ -8,6 +8,7 @@ public:
   EngineApi();
   ~EngineApi();
   void receive_cmdline_args(int argc, char* argv[]);
+  void start();
 
 private:
   int num_cmdline_args;

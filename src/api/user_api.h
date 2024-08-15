@@ -7,6 +7,7 @@ class UserApi
 public:
   UserApi(int argc, char* argv[]);
   ~UserApi();
+  void start_veritas();
  
 private:
   EngineApi engine_api;
