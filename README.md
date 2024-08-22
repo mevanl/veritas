@@ -13,7 +13,7 @@ To get started, just head to the [releases](https://github.com/mevanl/veritas/re
 2. Clone this repository. 
 3. Inside the cloned directory, run ***'make linux'*** to build.
 
-### Building on Windows 
+#### Building on Windows 
 1. Install make and add it to the path.
 2. Clone this repository. 
 3. Download and extract the latest SDL2-devel for mingw from the official [SDL2 repository](https://github.com/libsdl-org/SDL/releases).
