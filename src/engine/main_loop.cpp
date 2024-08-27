@@ -1,8 +1,9 @@
-#include "engine.h"
+#include "engine.hpp"
+
 
 void Engine::main_loop()
 {
-  bool exit = false;
+  int exit = 0;
   SDL_Event event;
 
   while (!exit)
@@ -12,7 +13,7 @@ void Engine::main_loop()
     {
       if (event.type == SDL_QUIT)
       {
-        exit = true; 
+        exit = 1; 
       }
     }
   }

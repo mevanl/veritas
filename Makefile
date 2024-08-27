@@ -1,26 +1,24 @@
-# Shared 
 CC = g++
 CFLAGS = -Wall -Wextra -pedantic
-SOURCES = $(wildcard ./src/*.cpp ./src/*/*.cpp ./src/*/**/*.cpp ./src/*/**/**/*.cpp)
+SOURCES =  ./src/main.cpp ./src/engine/*cpp
 
 
-# Linux 
-Linux_Libraries = -l SDL2 
+# Linux
+linux_libraries = -l SDL2 
 
 linux: src/main.cpp
-	$(CC) $(CFLAGS) $(SOURCES) $(Linux_Libraries) -o veritas
-
-linux-debug: src/main.cpp
-	$(CC) $(CFLAGS) $(SOURCES) $(Linux_Libraries) -g -o veritas
-
-linux-clean: 
-	rm veritas
-
+	$(CC) $(CFLAGS) $(SOURCES) $(linux_libraries) -o veritas
+debug: src/main.cpp
+	$(CC) $(CFLAGS) $(SOURCES) $(linux_libraries) -g -o veritas-debug
+clean:
+	rm main
 
 # Windows 
-Windows_SDL2_Include = -I .\libs\SDL2\include
-Windows_SDL2_Lib = -L .\libs\SDL2\lib
-Windows_Libraries = -lmingw32 -lSDL2main -lSDL2
+win_sdl2_include = -I ./SDL2/include
+win_sdl2_lib = -L ./SDL2/lib
+win_libraries = -lmingw32 -lSDL2main -lSDL2
 
 windows: src/main.cpp
-	$(CC) $(SOURCES) $(Windows_SDL2_Include) $(Windows_SDL2_Lib) $(Windows_Libraries) -o veritas
+	$(CC) $(CFLAGS) $(SOURCES) $(win_sdl2_include) $(win_sdl2_lib) $(win_libraries) -o veritas
+windows-debug: src/main.cpp
+	$(CC) $(CFLAGS) $(SOURCES) $(win_sdl2_include) $(win_sdl2_lib) $(win_libraries) -g -o veritas-debug

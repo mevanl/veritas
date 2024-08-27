@@ -15,9 +15,9 @@ To get started, just head to the [releases](https://github.com/mevanl/veritas/re
 
 #### Building on Windows 
 1. Install make and add it to the path.
-2. Clone this repository. 
+2. Clone/download this repository. 
 3. Download and extract the latest SDL2-devel for mingw from the official [SDL2 repository](https://github.com/libsdl-org/SDL/releases).
-4.  Inside the extracted directory, copy the ***'x86_64-w64-mingw32'*** directory to the ***'veritas/libs'*** directory (Create the libs directory if it does not exist).
+4.  Inside the extracted directory, copy the ***'x86_64-w64-mingw32'*** directory to the ***'veritas'*** directory.
 5. Rename ***'x86_64-w64-mingw32'*** to ***'SDL2'*** 
 6. Enter the ***'SDL2/bin'*** directory and copy the ***'SDL2.dll'*** file.
 7. Paste this file in the main Veritas directory (where the Makefile is located).

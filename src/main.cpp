@@ -1,10 +1,7 @@
-#include "user_api/user_api.h"
-
+#include "engine/engine.hpp"
 
 int main(int argc, char* argv[])
 {
-  UserApi api(argc, argv);
-  api.start_veritas();
-
-  return 0;
+  Engine engine(800, 800);
+  engine.main_loop();
 }

@@ -1,14 +1,16 @@
-#include "engine.h"
+#include "engine.hpp"
 
 
-Engine::Engine()
+Engine::Engine(int initial_screen_width, int initial_screen_height)
 {
-  check_negative_val(SDL_Init(SDL_INIT_VIDEO));
-  renderer.create_renderer(main_window.window_getter());
-}
+  p_screen_width = initial_screen_width;
+  p_screen_height = initial_screen_height;
 
+  start();
+}
 
 Engine::~Engine()
 {
-  SDL_Quit();
+  stop();
 }
+

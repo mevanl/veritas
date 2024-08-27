@@ -1,5 +1,5 @@
-0. Setup engine to be able to render to the screen
-1. Create an API function that will call the engine to start the main veritas window 
+[DONE] 0. Setup engine to be able to render to the screen
+[DONE] 1. Create an API function that will call the engine to start the main veritas window 
 2. Set up the text area of the main window (can be the full window at first)
 3. Be able to open and view a file 
 4. Be able to actually edit text
@@ -22,3 +22,4 @@ Setting Feature: DefaultSettings.JSON read, UserSettings.JSON read, ProjectSetti
 
 MainWindowArea: Abstract parent class that is never used itself. Child of it could be like TextWindowArea class that has special 
                 methods for just it. It will also have an SDL_Rect to define where it is, bool isShown(), bool loadOnTrigger(), etc.
+                I have changed my mind. There will be no inherientence in this project. 
