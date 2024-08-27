@@ -3,18 +3,19 @@
 
 void Engine::main_loop()
 {
-  int exit = 0;
+  bool exit = false;
   SDL_Event event;
 
   while (!exit)
-  {
-    SDL_Delay(50);
+  { 
     while (SDL_PollEvent(&event) != 0)
     {
       if (event.type == SDL_QUIT)
       {
-        exit = 1; 
+        exit = true;
       }
     }
+
+    SDL_Delay(50); 
   }
 }
