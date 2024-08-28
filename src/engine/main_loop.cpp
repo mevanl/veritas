@@ -8,14 +8,15 @@ void Engine::main_loop()
 
   while (!exit)
   { 
+    SDL_Delay(50);
+
     while (SDL_PollEvent(&event) != 0)
     {
-      if (event.type == SDL_QUIT)
+      if (event.type == SDL_QUIT || event.window.event == SDL_WINDOWEVENT_CLOSE)
       {
         exit = true;
+        break;
       }
-    }
-
-    SDL_Delay(50); 
+    } 
   }
 }
