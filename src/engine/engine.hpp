@@ -1,6 +1,7 @@
 #pragma once 
 #include <SDL2/SDL.h>
 #include <iostream>
+#include <string>
 
 
 class Engine
@@ -16,7 +17,7 @@ private:
   // engine initialization functions, definitions in start.cpp
   void initialize_sdl();
   void create_main_window();
-  void create_renderer();
+  void create_main_window_renderer();
 
 
   // error handling functions 
@@ -26,8 +27,9 @@ private:
 public:
   int m_screen_width = 0;
   int m_screen_height = 0;
+  std::string m_main_window_name = "default";
 
 private:
   SDL_Window* main_window;
-  SDL_Renderer* renderer;
+  SDL_Renderer* main_window_renderer;
 };

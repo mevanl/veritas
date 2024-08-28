@@ -1,4 +1,4 @@
-#include "veritas.hpp"
+#include "veritas/veritas.hpp"
 
 
 int main(int argc, char* argv[])

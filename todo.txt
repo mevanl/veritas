@@ -20,6 +20,7 @@ Setting Feature: DefaultSettings.JSON read, UserSettings.JSON read, ProjectSetti
                  Default settings.JSON will be created the first time the application is ran, this is good way to keep track
                  of if veritas has been opened before
 
-MainWindowArea: Abstract parent class that is never used itself. Child of it could be like TextWindowArea class that has special 
-                methods for just it. It will also have an SDL_Rect to define where it is, bool isShown(), bool loadOnTrigger(), etc.
-                I have changed my mind. There will be no inherientence in this project. 
+
+NOTES:
+  take out hard coded veritas name from engine, engine constructor can take in string of main window name
+  Veritas class will use the engine to implement the veritas application

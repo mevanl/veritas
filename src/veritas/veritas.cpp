@@ -5,6 +5,7 @@ Veritas::Veritas(int screen_width, int screen_height)
 {
   engine.m_screen_width = screen_width;
   engine.m_screen_height = screen_height;
+  engine.m_main_window_name = "Veritas";
 }
 
 Veritas::~Veritas()

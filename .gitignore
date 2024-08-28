@@ -2,7 +2,10 @@
 SDL2
 SDL2.dll
 
+
 veritas
 veritas.exe
 veritas-debug
 veritas-debug.exe
+
+!src/veritas
