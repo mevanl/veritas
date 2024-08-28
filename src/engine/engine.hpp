@@ -14,6 +14,9 @@ public:
   void main_loop();
   void stop();
 
+  void set_main_window_name(std::string name);
+  void set_main_window_dimensions(int width, int height);
+
 private:
   // engine initialization functions, definitions in start.cpp
   void initialize_sdl();

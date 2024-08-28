@@ -10,8 +10,8 @@ void Window::start()
 void Window::create_window_and_renderer()
 {
   window = SDL_CreateWindow(window_name.c_str(),
-                            SDL_WINDOWPOS_UNDEFINED,
-                            SDL_WINDOWPOS_UNDEFINED,
+                            SDL_WINDOWPOS_CENTERED,
+                            SDL_WINDOWPOS_CENTERED,
                             window_width,
                             window_height,
                             SDL_WINDOW_SHOWN);
