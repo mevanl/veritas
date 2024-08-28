@@ -6,26 +6,28 @@
 class Engine
 {
 public:
-  Engine(int screen_width, int screen_height);
+  Engine();
   ~Engine();
+  void start();
   void main_loop();
+  void stop();
 
 private:
   // engine initialization functions, definitions in start.cpp
-  void start();
   void initialize_sdl();
   void create_main_window();
   void create_renderer();
 
-  void stop();
 
   // error handling functions 
   void check_negative_val(int ret_val);
   void* check_null_ptr(void* ptr);
 
+public:
+  int m_screen_width = 0;
+  int m_screen_height = 0;
+
 private:
-  int p_screen_width = 0;
-  int p_screen_height = 0;
   SDL_Window* main_window;
   SDL_Renderer* renderer;
 };

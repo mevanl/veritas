@@ -1,6 +1,6 @@
 CC = g++
 CFLAGS = -Wall -Wextra -pedantic
-SOURCES =  ./src/main.cpp ./src/engine/*cpp
+SOURCES =  ./src/*.cpp ./src/engine/*.cpp 
 
 
 # Linux

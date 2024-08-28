@@ -1,9 +1,10 @@
-#include "engine/engine.hpp"
+#include "veritas.hpp"
+
 
 int main(int argc, char* argv[])
 {
-  Engine engine(800, 800);
-  engine.main_loop();
+  Veritas veritas(800, 800);
+  veritas.run();
 
   return 0;
 }

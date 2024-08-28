@@ -6,9 +6,6 @@ void Engine::start()
   initialize_sdl();
   create_main_window();
   create_renderer();
-  //create_viewports
-  
-  main_loop();
 }
 
 void Engine::initialize_sdl()
@@ -18,7 +15,7 @@ void Engine::initialize_sdl()
 
 void Engine::create_main_window()
 {
-  main_window = SDL_CreateWindow("Veritas", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, p_screen_width, p_screen_height, SDL_WINDOW_SHOWN);
+  main_window = SDL_CreateWindow("Veritas", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, m_screen_width, m_screen_height, SDL_WINDOW_SHOWN);
   check_null_ptr(main_window);
 }
 
