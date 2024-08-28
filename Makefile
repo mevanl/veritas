@@ -11,7 +11,7 @@ linux: src/main.cpp
 debug: src/main.cpp
 	$(CC) $(CFLAGS) $(SOURCES) $(linux_libraries) -g -o veritas-debug
 clean:
-	rm main
+	rm veritas
 
 # Windows 
 win_sdl2_include = -I ./SDL2/include
@@ -22,3 +22,5 @@ windows: src/main.cpp
 	$(CC) $(CFLAGS) $(SOURCES) $(win_sdl2_include) $(win_sdl2_lib) $(win_libraries) -o veritas
 windows-debug: src/main.cpp
 	$(CC) $(CFLAGS) $(SOURCES) $(win_sdl2_include) $(win_sdl2_lib) $(win_libraries) -g -o veritas-debug
+windows-clean:
+	del veritas.exe
