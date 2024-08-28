@@ -1,12 +1,13 @@
+#pragma once
 #include "../engine/engine.hpp"
 
 
 class Veritas
 {
 public:
-  Veritas(int screen_width, int screen_height);
+  Veritas();
   ~Veritas();
-  void run();
+  void start();
 
 private:
   void stop();

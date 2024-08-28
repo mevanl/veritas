@@ -1,6 +1,7 @@
-#include "engine.hpp"
+#include "window.hpp"
 
-void Engine::check_negative_val(int ret_val)
+
+void Window::check_negative_val(int ret_val)
 {
   if (ret_val < 0)
   {
@@ -9,8 +10,7 @@ void Engine::check_negative_val(int ret_val)
     exit(1);
   }
 }
-
-void Engine::check_null_ptr(void* ptr)
+void Window::check_null_ptr(void* ptr)
 {
   if (ptr == NULL)
   {
