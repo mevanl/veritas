@@ -8,9 +8,11 @@ public:
   Veritas();
   ~Veritas();
   void start();
+  void main_loop();
 
 private:
   void stop();
+  
 
 private:
   Engine engine;

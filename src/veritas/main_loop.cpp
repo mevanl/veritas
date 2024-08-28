@@ -1,8 +1,7 @@
-// Basic template function for specific application to implement
-#include "engine.hpp"
+#include "veritas.hpp"
 
 
-void Engine::main_loop()
+void Veritas::main_loop()
 {
   bool exit = false;
   SDL_Event event;
